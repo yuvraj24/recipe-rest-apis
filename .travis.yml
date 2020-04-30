@@ -1,0 +1,11 @@
+language python
+python:
+  - "3.8"
+
+before_scripts: 
+  - pip3 install pipenv
+  - pipenv shell
+
+script:
+  - python3 manage.py test && flake8
+
