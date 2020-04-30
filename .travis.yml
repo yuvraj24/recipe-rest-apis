@@ -6,5 +6,5 @@ before_scripts:
   - pip3 install pipenv && pipenv shell && pipenv install django  && pepenv install flake8
 
 script: 
-  - cd app && python3 manage.py test && flake8
+  - cd app && python3 manage.py test && flake8    
 
