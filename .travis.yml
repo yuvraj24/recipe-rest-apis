@@ -4,8 +4,8 @@ python:
 
 before_scripts:
   - pip3 install pipenv 
-
-script:
   - pipenv shell
+
+script: 
   - python3 manage.py test && flake8
 
