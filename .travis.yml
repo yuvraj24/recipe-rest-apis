@@ -5,6 +5,9 @@ python:
 before_scripts:
   - pip3 install pipenv && pipenv install django  && pipenv install flake8 && pipenv install psycopg2-binary
 
+services:
+  - postgresql
+
 script: 
   - cd app && python3 manage.py test && flake8    
 
