@@ -3,7 +3,7 @@ python:
   - "3.8"
 
 before_scripts:
-  - pip3 install pipenv && pipenv install django  && pipenv install flake8
+  - pip3 install pipenv && pipenv install django  && pipenv install flake8 && pipenv install psycopg2-binary
 
 script: 
   - cd app && python3 manage.py test && flake8    
