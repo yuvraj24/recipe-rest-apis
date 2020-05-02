@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "8241ed1233bd66fa77b065b15e1e4e6b17ade18321da4a091c7ed803dff684fa"
+            "sha256": "54457dcdc054025722cb73aada6ffeaa0418c13aceecacf054b3e5f6e3fa286e"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -16,6 +16,13 @@
         ]
     },
     "default": {
+        "app": {
+            "hashes": [
+                "sha256:214549e746d777292d807eec7713c2cea332e08e037c923cd61ee1d5ab7a127f"
+            ],
+            "index": "pypi",
+            "version": "==0.0.1"
+        },
         "asgiref": {
             "hashes": [
                 "sha256:8036f90603c54e93521e5777b2b9a39ba1bad05773fcf2d208f0299d1df58ce5",
@@ -30,6 +37,14 @@
             ],
             "index": "pypi",
             "version": "==3.0.5"
+        },
+        "djangorestframework": {
+            "hashes": [
+                "sha256:05809fc66e1c997fd9a32ea5730d9f4ba28b109b9da71fccfa5ff241201fd0a4",
+                "sha256:e782087823c47a26826ee5b6fa0c542968219263fb3976ec3c31edab23a4001f"
+            ],
+            "index": "pypi",
+            "version": "==3.11.0"
         },
         "entrypoints": {
             "hashes": [

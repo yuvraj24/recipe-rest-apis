@@ -10,6 +10,8 @@ pylint = "*"
 [packages]
 django = "*"
 flake8 = "*"
+app = {core = "*"}
+djangorestframework = "*"
 
 [requires]
 python_version = "3.8"

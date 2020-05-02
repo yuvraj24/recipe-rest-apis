@@ -1,5 +1,5 @@
-from django.test import TestCase
 from django.contrib.auth import get_user_model
+from django.test import TestCase
 
 
 class ModelTests(TestCase):
@@ -7,8 +7,10 @@ class ModelTests(TestCase):
         # Test creating a new user with an email is successfull
         email = 'yuvraj@gmail.com'
         password = 'Test123'
-        user = get_user_model().objects.create_user(email=email,
-                                                    password=password)
+        user = get_user_model().objects.create_user(
+            email=email,
+            password=password
+        )
         self.assertEqual(user.email, email)
         self.assertTrue(user.check_password(password))
 
@@ -26,6 +28,6 @@ class ModelTests(TestCase):
     def test_create_new_super_user(self):
         # Test creating new super user
         user = get_user_model().objects. \
-          create_superuser('yuvraj@gmail.com', 'test123')
+            create_superuser('yuvraj@gmail.com', 'test123')
         self.assertTrue(user.is_superuser)
         self.assertTrue(user.is_staff)
